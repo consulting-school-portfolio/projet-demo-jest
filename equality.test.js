@@ -1,10 +1,10 @@
-const fn = require('./equality');
+const { add, createObject } = require('./equality');
 
 describe('testing equality functions', () =>{
     it('should add two numbers', () => {
-        expect(fn.add(1, 2)).toBe(3)
+        expect(add(1, 2)).toBe(3)
     });
       it('should create an equivalent object', () => {
-        expect(fn.createObject()).toEqual({value: 1})
+        expect(createObject()).toEqual({value: 1})
     });
 });

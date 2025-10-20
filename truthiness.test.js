@@ -1,13 +1,13 @@
-const fn = require('./truthiness');
+const { checkValue } = require('./truthiness');
 
 describe('testing truthiness functions', () => {
     it('should be truthy', () => {
-        expect(fn.checkValue(1)).toBeTruthy();
-        expect(fn.checkValue('hello')).toBeTruthy();
+        expect(checkValue(1)).toBeTruthy();
+        expect(checkValue('hello')).toBeTruthy();
     });
     it('should be falsy', () => {
-       expect(fn.checkValue(0)).toBeFalsy();
-       expect(fn.checkValue(null)).toBeFalsy();
-       expect(fn.checkValue('')).toBeFalsy(); 
+       expect(checkValue(0)).toBeFalsy();
+       expect(checkValue(null)).toBeFalsy();
+       expect(checkValue('')).toBeFalsy(); 
     })
 })

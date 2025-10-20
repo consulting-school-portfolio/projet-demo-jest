@@ -1,9 +1,9 @@
-const fn = require('./contain');
+const { getFruits } = require('./contain');
 
 describe('Testing contain functions', () => {
     let fruits;
     beforeEach(() => {
-        fruits = fn.getFruits();
+        fruits = getFruits();
     })
     it('should contain banana', () => {
         expect(fruits).toContain('banana');
