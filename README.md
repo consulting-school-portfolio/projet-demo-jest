@@ -6,3 +6,5 @@ Projet démo pour apprendre Jest
 
 - toBe & toEqual
 - toBeTruthy & toBeFalsy
+- toContain
+- toThrow
